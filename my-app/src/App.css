@@ -1,12 +1,16 @@
+@font-face {
+  font-family: 'Mermaid';
+  src: url('./assets/fonts/Mermaid.ttf') format('truetype');
+}
+
 body,
 html {
   margin: 0;
   padding: 0;
+  font-family: 'Mermaid', sans-serif;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   box-sizing: border-box;
 }
 
@@ -37,4 +41,8 @@ body {
 
 .bg-emphasis{
   background-color: #F4DAD9;
+}
+
+.bg-segundary{
+  background-color: #B0C489;
 }

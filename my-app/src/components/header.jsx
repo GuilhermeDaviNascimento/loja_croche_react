@@ -1,5 +1,4 @@
-import menu from "../assets/images/menu.svg";
-import cart from "../assets/images/cart.svg";
+import logo from '../assets/logo/logo.svg'
 
 export default function Header() {
   return (
@@ -7,6 +6,9 @@ export default function Header() {
       <button>
         <i class="fa-solid fa-bars"></i>
       </button>
+      {/* <button>
+        <img src={logo} alt="logo" />
+      </button> */}
       <button>
         <i class="fa-solid fa-cart-shopping"></i>
       </button>
