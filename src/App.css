@@ -46,3 +46,11 @@ body {
 .bg-segundary{
   background-color: #B0C489;
 }
+
+.outline-default{
+  outline-color: #CE4563
+}
+
+.bg-emphasis-dark{
+  background-color: #ddbcbc;
+}
