@@ -12,7 +12,7 @@ export default function ScrollClothes({ texto, array }) {
       </div>
       <div className="flex gap-4 overflow-x-auto">
         {array.map((clothe) => (
-          <Clothe key={clothe.name} name={clothe.name} price={clothe.price} />
+          <Clothe key={clothe.name} id={clothe.id} name={clothe.name} price={clothe.price} url={clothe.img_url} />
         ))}
       </div>
     </div>

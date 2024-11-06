@@ -17,10 +17,12 @@ export default function Pages() {
   }, []);
 
   const groupedClothes = clothes.reduce((acc, item) => {
-    if (!acc[item.category]) {
-      acc[item.category] = [];
-    }
-    acc[item.category].push(item);
+    item.category.forEach((category) => {
+      if (!acc[category]) {
+        acc[category] = [];
+      }
+      acc[category].push(item);
+    });
     return acc;
   }, {});
 
@@ -31,10 +33,10 @@ export default function Pages() {
       <Colections />
       <Popular />
       {Object.keys(groupedClothes).map((category) => (
-        <ScrollClothes 
-          key={category} 
-          texto={category} 
-          array={groupedClothes[category]} 
+        <ScrollClothes
+          key={category}
+          texto={category}
+          array={groupedClothes[category]}
         />
       ))}
     </div>

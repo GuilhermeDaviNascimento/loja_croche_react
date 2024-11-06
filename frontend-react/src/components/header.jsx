@@ -7,7 +7,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../assets/logo/logo.svg";
 
 const navigation = [
-  { name: "Inicial", href: "./", current: true },
+  { name: "Inicial", href: "http://localhost:3000/", current: true },
   { name: "Cuidados", href: "#", current: false },
   { name: "Fale comigo", href: "https://wa.me/82993460428", current: false },
 ];
@@ -38,7 +38,7 @@ export default function Example() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <a href="./">
+              <a href="http://localhost:3000/">
                 <img alt="Your Company" src={logo} className="h-8 w-auto" />
               </a>
             </div>

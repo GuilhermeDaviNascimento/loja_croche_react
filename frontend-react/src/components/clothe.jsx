@@ -1,13 +1,13 @@
-import roupa1 from "../assets/images/roupa1.svg";
+import { Link } from "react-router-dom";
 
-export default function components({name, price}) {
+export default function components({ id, name, price, url }) {
   return (
-    <div>
-      <div className="w-40 h-40 bg-emphasis rounded-lg shrink-0 flex p-2">
-        <img src={roupa1} alt="" />
+    <Link to={`/roupa/${id}`}>
+      <div className="w-40 h-40 bg-emphasis rounded-lg shrink-0 flex p-2 items-center justify-center overflow-hidden">
+        <img src={url} alt="" />
       </div>
-      <h1 className="text-default mt-2">{name}</h1>
-      <h1 className="text-default text-lg">{price}</h1>
-    </div>
+      <h1 className="text-default mt-2 w-44">{name}</h1>
+      <h1 className="text-default text-lg">{price} R$</h1>
+    </Link>
   );
 }

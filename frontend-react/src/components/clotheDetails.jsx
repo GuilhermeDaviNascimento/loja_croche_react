@@ -1,16 +1,14 @@
-import roupa from "../assets/images/roupa1.svg";
-
-export default function components() {
+export default function components({name, url, price}) {
   return (
     <div className="flex flex-col justify-between">
       <div className="flex items-center justify-center">
         <div className="relative inline-block">
-          <img src={roupa} alt="roupa1" className="relative z-10 w-80 h-auto" />
+          <img src={url} alt="roupa1" className="relative z-10 w-80 h-auto" />
           <div className="absolute top-1/2 left-1/2 w-44 h-44 rounded-full bg-segundary z-0 transform -translate-x-1/2 -translate-y-1/2"></div>
         </div>
       </div>
-      <div className="flex flex-col items-start text-default gap-2">
-        <h1 className="text-xl">Roupa de crochê 1</h1>
+      <div className="flex flex-col items-start text-default gap-4">
+        <h1 className="text-xl">{name}</h1>
         <div>
           <p className="text-lg">Cor:</p>
           <div className="flex gap-2">
@@ -33,7 +31,7 @@ export default function components() {
             GG
           </div>
         </div>
-        <div className="text-xl">99,99R$</div>
+        <div className="text-xl">{price} R$</div>
         <div className="flex flex-col items-start gap-2">
           <button
             type="button"
