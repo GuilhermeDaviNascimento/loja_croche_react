@@ -1,0 +1,16 @@
+{
+  "name": "loja_croche_react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"node ./backend-express/app.js\" \"cd ./frontend-react && npm start\"",
+    "build": "cd ./frontend-react && npm install && cd .. && cd ./backend-express && npm install && cd .. && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
