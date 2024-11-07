@@ -1,15 +1,17 @@
-export default function components({nome, preco, foto}) {
+import { Link } from "react-router-dom";
+
+export default function components({ id, nome, preco, foto }) {
   return (
-    <div className="bg-emphasis w-72 h-40 rounded-lg p-3 flex justify-center items-center shrink-0">
+    <Link className="bg-emphasis w-72 h-40 rounded-lg p-3 flex justify-center items-center shrink-0" to={`/roupa/${id}`}>
       <div className="flex flex-col justify-between w-max h-full">
-        <div className="flex items-center">  
-        <p className="text-default">5</p>
-        <i class="fa-solid fa-star"></i>
+        <div className="flex items-center">
+          <p className="text-default">5</p>
+          <i class="fa-solid fa-star"></i>
         </div>
-        
+
         <div>
           <h3 className="text-default">{nome}</h3>
-          <h3 className="text-default">{preco}</h3>
+          <h3 className="text-default">{preco} R$</h3>
         </div>
         <div className="flex gap-3 items-center">
           <p className="text-default">Cores</p>
@@ -22,6 +24,6 @@ export default function components({nome, preco, foto}) {
         <img src={foto} alt="roupa1" className="relative z-10" />
         <div className="absolute top-1/2 left-1/2 w-24 h-24 rounded-full bg-segundary z-0 transform -translate-x-1/2 -translate-y-1/2"></div>
       </div>
-    </div>
+    </Link>
   );
 }

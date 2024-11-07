@@ -31,7 +31,7 @@ export default function Pages() {
       <Header />
       <Input />
       <Colections />
-      <Popular />
+      <Popular popular_arr={groupedClothes["Popular"]}></Popular>
       {Object.keys(groupedClothes).map((category) => (
         <ScrollClothes
           key={category}

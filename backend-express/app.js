@@ -12,7 +12,7 @@ const clothes = [
     id: 1,
     name: "Cropped Fada",
     price: 100,
-    category: ["Croppeds"],
+    category: ["Croppeds", "Popular"],
     img_url: "https://i.imgur.com/hmSmyRE.jpeg",
   },
   {
@@ -26,21 +26,21 @@ const clothes = [
     id: 3,
     name: "Bolsa de Squares de Coração",
     price: 110,
-    category: ["Bolsas", "Acessórios"],
+    category: ["Bolsas", "Acessórios", "Popular"],
     img_url: "https://i.imgur.com/heZ7cnv.jpeg",
   },
   {
     id: 4,
     name: "Touca de Gatinho",
     price: 60,
-    category: ["Toucas", "Acessórios"],
+    category: ["Toucas", "Acessórios", "Popular"],
     img_url: "https://i.imgur.com/D06k7pY.jpeg",
   },
   {
     id: 5,
     name: "Biquíni Simples",
     price: 100,
-    category: ["Biquínis", "Verão"],
+    category: ["Biquínis", "Verão", "Popular"],
     img_url: "https://i.imgur.com/4d0dDVS.jpeg",
   },
   {
@@ -54,7 +54,7 @@ const clothes = [
     id: 7,
     name: "Cropped de um Square Frente Única",
     price: 70,
-    category: ["Croppeds"],
+    category: ["Croppeds", "Popular"],
     img_url: "https://i.imgur.com/xW6Rxuh.jpeg",
   },
   {
@@ -68,7 +68,7 @@ const clothes = [
     id: 9,
     name: "Conjunto Top e Saia",
     price: 150,
-    category: ["Conjuntos", "Verão"],
+    category: ["Conjuntos", "Verão", "Popular"],
     img_url: "https://i.imgur.com/W6g6Rp4.jpeg",
   },
   {
