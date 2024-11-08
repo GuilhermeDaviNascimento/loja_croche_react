@@ -10,7 +10,7 @@ export default function Pages() {
   const [clothes, setClothes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5500/")
+    fetch("https://ana-crochet-server.onrender.com/")
       .then((response) => response.json())
       .then((data) => setClothes(data))
       .catch((error) => console.error("Erro ao buscar roupas:", error));
