@@ -6,9 +6,8 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../assets/logo/logo.svg";
 
-
 const navigation = [
-  { name: "Inicial", href: process.env.REACT_APP_BACKEND_URL, current: true },
+  { name: "Inicial", href: process.env.REACT_APP_FRONTEND_URL, current: true },
   { name: "Cuidados", href: "#", current: false },
   { name: "Fale comigo", href: "https://wa.me/82993460428", current: false },
 ];
@@ -39,7 +38,7 @@ export default function Example() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <a href="http://loja-croche-backend.vercel.app/">
+              <a href={process.env.REACT_APP_FRONTEND_URL}>
                 <img alt="Your Company" src={logo} className="h-8 w-auto" />
               </a>
             </div>
