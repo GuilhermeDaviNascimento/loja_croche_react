@@ -7,7 +7,7 @@ export default function Pages() {
   const [clothes, setClothes] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5500/categoria/${category}`)
+    fetch(`http://loja-croche-backend.vercel.app/categoria/${category}`)
       .then((response) => response.json())
       .then((data) => setClothes(data))
       .catch((error) => console.error("Erro ao buscar roupas:", error));
