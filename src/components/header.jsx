@@ -6,8 +6,9 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../assets/logo/logo.svg";
 
+
 const navigation = [
-  { name: "Inicial", href: "http://loja-croche-backend.vercel.app/", current: true },
+  { name: "Inicial", href: process.env.REACT_APP_BACKEND_URL, current: true },
   { name: "Cuidados", href: "#", current: false },
   { name: "Fale comigo", href: "https://wa.me/82993460428", current: false },
 ];

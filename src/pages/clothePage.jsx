@@ -4,12 +4,13 @@ import ClotheDetails from "../components/clotheDetails";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+
 export default function Pages() {
   const { id } = useParams();
   const [clothes, setClothes] = useState([]);
 
   useEffect(() => {
-    fetch(`http://loja-croche-backend.vercel.app/roupa/${id}`)
+    fetch(`${process.env.REACT_APP_BACKEND_URL}roupa/${id}`)
       .then((response) => response.json())
       .then((data) => setClothes(data))
       .catch((error) => console.error("Erro ao buscar roupas:", error));

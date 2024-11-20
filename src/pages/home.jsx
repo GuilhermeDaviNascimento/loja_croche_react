@@ -6,11 +6,12 @@ import Colections from "../components/colections";
 import Popular from "../components/sectionPopular";
 import ScrollClothes from "../components/scrollClothes";
 
+
 export default function Pages() {
   const [clothes, setClothes] = useState([]);
 
   useEffect(() => {
-    fetch("http://loja-croche-backend.vercel.app/")
+    fetch(process.env.REACT_APP_BACKEND_URL)
       .then((response) => response.json())
       .then((data) => setClothes(data))
       .catch((error) => console.error("Erro ao buscar roupas:", error));
